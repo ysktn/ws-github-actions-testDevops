@@ -26,7 +26,7 @@ $(NAME):	$(OBJ)
 		gcc -o $(NAME) $(OBJ)
 
 debug:
-		gcc -o $(NAME) $(SRC) -ggdb3
+		gcc -o $(NAME) $(SRC) $(CPPFLAGS) -ggdb3
 
 compile_tests:
 		gcc -o unit_testing $(TESTS_SRC) tests/unit_tests.c \
