@@ -5,24 +5,21 @@
 ** swapupcase.h
 */
 
-#ifndef STUMPER_H_
-    #define STUMPER_H_
+#pragma once
 
-    #include <stdbool.h>
+#include <stdbool.h>
 
-    #define EPITECH_OK 0
-    #define EPITECH_KO 84
+#define EPITECH_OK 0
+#define EPITECH_KO 84
 
-    #define ERROR -1
+#define ERROR -1
 
-    int swapupcase(char *str);
+int swapupcase(char *str);
 
-    int trim_numbers(char *str, bool is_string_odd);
+int trim_numbers(char *str, bool is_string_odd);
 
-    int my_strlen(char *str);
+int my_strlen(char *str);
 
-    int swap_string(char *str, bool is_string_odd);
+int swap_string(char *str, bool is_string_odd);
 
-    int case_string(char *str, bool is_string_odd);
-
-#endif
+int case_string(char *str, bool is_string_odd);
